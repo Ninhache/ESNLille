@@ -51,6 +51,13 @@
     "from": "Dès {price}",
     "empty": "Aucun événement prévu pour l'instant. Les prochains sont annoncés sur HelloAsso.",
     "unavailable": "Les événements ne peuvent pas être chargés pour l'instant. Tu les retrouveras tous sur HelloAsso.",
-    "openHelloasso": "Ouvrir HelloAsso"
+    "openHelloasso": "Ouvrir HelloAsso",
+    "subscribe": {
+      "title": "Ne rate plus aucun événement",
+      "lead": "Abonne-toi une fois : les nouveaux événements ESN Lille apparaissent tout seuls dans ton agenda.",
+      "google": "Google Agenda",
+      "apple": "Apple / Outlook",
+      "raw": "Lien .ics"
+    }
   }
 }

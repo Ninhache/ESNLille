@@ -51,6 +51,13 @@
     "from": "From {price}",
     "empty": "No events scheduled right now. New ones are announced on HelloAsso.",
     "unavailable": "Events can't be loaded right now. You'll find them all on HelloAsso.",
-    "openHelloasso": "Open HelloAsso"
+    "openHelloasso": "Open HelloAsso",
+    "subscribe": {
+      "title": "Never miss an event",
+      "lead": "Subscribe once: new ESN Lille events show up in your calendar on their own.",
+      "google": "Google Calendar",
+      "apple": "Apple / Outlook",
+      "raw": ".ics link"
+    }
   }
 }

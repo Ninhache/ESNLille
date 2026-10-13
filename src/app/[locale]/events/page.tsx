@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { CalendarSubscribe } from '@/components/calendar-subscribe';
 import { EventList } from '@/components/event-list';
 import { JsonLd } from '@/components/json-ld';
 import { getLocale, getMessages } from '@/i18n/dictionaries';
@@ -26,6 +27,7 @@ export default async function EventsPage() {
     <main id="content" className="mx-auto max-w-6xl px-4 pt-10 pb-24 sm:px-8">
       <h1 className="mb-8 font-heading text-[clamp(2.5rem,6vw,4.5rem)] leading-none">{messages.events.title}</h1>
       <EventList result={result} locale={locale} labels={messages.events} />
+      <CalendarSubscribe site={siteUrl()} labels={messages.events.subscribe} />
       {result.status === 'ok' && result.events.length > 0 && <JsonLd data={eventsJsonLd(result.events, siteUrl())} />}
     </main>
   );

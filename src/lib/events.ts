@@ -105,13 +105,13 @@ async function clientFromEnv(env: NodeJS.ProcessEnv): Promise<HelloAssoClient | 
 
 let sharedClient: Promise<HelloAssoClient | null> | undefined;
 
-/** Upcoming events for the pages. Never throws: any failure becomes `unavailable`. */
-export async function getUpcomingEvents(): Promise<EventsResult> {
+/** Events that have not ended at `since` (now by default). Never throws: any failure becomes `unavailable`. */
+export async function getUpcomingEvents(since = Date.now()): Promise<EventsResult> {
   sharedClient ??= clientFromEnv(process.env);
   try {
     const client = await sharedClient;
     if (!client) return { status: 'unavailable' };
-    return { status: 'ok', events: await fetchUpcomingEvents(client, Date.now()) };
+    return { status: 'ok', events: await fetchUpcomingEvents(client, since) };
   } catch (error) {
     console.error('HelloAsso events unavailable:', error);
     return { status: 'unavailable' };
