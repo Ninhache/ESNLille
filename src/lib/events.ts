@@ -70,8 +70,8 @@ export async function fetchUpcomingEvents(client: HelloAssoClient, now: number):
 
 async function clientFromEnv(env: NodeJS.ProcessEnv): Promise<HelloAssoClient | null> {
   const base = {
-    baseUrl: env.HELLOASSO_API_URL ?? DEFAULT_API_URL,
-    organization: env.HELLOASSO_ORGANIZATION ?? DEFAULT_ORGANIZATION,
+    baseUrl: env.HELLOASSO_API_URL || DEFAULT_API_URL,
+    organization: env.HELLOASSO_ORGANIZATION || DEFAULT_ORGANIZATION,
   };
   if (env.HELLOASSO_CLIENT_ID && env.HELLOASSO_CLIENT_SECRET) {
     return createHelloAssoClient({
