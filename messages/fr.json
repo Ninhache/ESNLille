@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "ESN Lille",
+    "description": "Erasmus Student Network Lille : événements, voyages et accompagnement des étudiants internationaux à Lille."
+  },
+  "header": {
+    "join": "Nous rejoindre",
+    "switchLocale": "English version"
+  },
+  "home": {
+    "titleStart": "Ton carnet Erasmus commence",
+    "titleMark": "à Lille.",
+    "lead": "Soirées, voyages, culture et sport avec des étudiants du monde entier, organisés par des bénévoles lillois.",
+    "eventsCta": "Voir les prochains événements",
+    "volunteerCta": "Devenir bénévole"
+  },
+  "join": {
+    "mailSubject": "Bénévolat à ESN Lille"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "back": "Retour à l'accueil"
+  }
+}
