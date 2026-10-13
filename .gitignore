@@ -3,6 +3,7 @@
 !/.gitignore
 !/.dockerignore
 !/.github/
+!/.husky/
 !/Dockerfile
 
 !/package.json
@@ -16,7 +17,9 @@
 !/public/
 !/content/
 !/messages/
+!/scripts/
 
+/src/fonts/
 *.md
 .env*
 *.zip
