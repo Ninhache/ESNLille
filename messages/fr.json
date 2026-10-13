@@ -19,6 +19,19 @@
       "students": "étudiants internationaux accueillis",
       "volunteers": "bénévoles",
       "years": "ans de vie Erasmus à Lille"
+    },
+    "esncard": {
+      "titleStart": "Prends ta",
+      "lead": "La carte de membre ESN : des événements moins chers à Lille et des réductions partout en Europe.",
+      "perks": [
+        "2 € de réduction sur chaque événement ESN Lille",
+        "Des réductions chez les partenaires ESN dans toute l'Europe",
+        "Reconnue par les sections ESN de plus de 40 pays"
+      ],
+      "pickup": "Achète-la en ligne, puis récupère-la à la MDE, Cité Scientifique.",
+      "partners": "Voir toutes les réductions",
+      "buy": "Acheter sur HelloAsso",
+      "cardTag": "Membre"
     }
   },
   "join": {

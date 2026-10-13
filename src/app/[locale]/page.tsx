@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { EsncardBlock } from '@/components/esncard-block';
 import { EventList, NextEvent } from '@/components/event-list';
 import { JsonLd } from '@/components/json-ld';
 import { StatsStrip } from '@/components/stats-strip';
@@ -44,6 +45,7 @@ export default async function HomePage() {
         {next && <NextEvent event={next} locale={locale} labels={messages.events} />}
       </div>
       <StatsStrip stats={getStats(new Date())} locale={locale} labels={home.stats} />
+      <EsncardBlock locale={locale} labels={home.esncard} />
       {(!next || later.length > 0) && (
         <section aria-labelledby="events-title" className="mt-20">
           <div className="mb-6 flex flex-wrap items-baseline justify-between gap-4">
