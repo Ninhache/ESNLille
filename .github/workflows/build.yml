@@ -1,0 +1,32 @@
+name: Build
+
+on:
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: build-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  next:
+    runs-on: ubuntu-latest
+    env:
+      FONTS_SSH_KEY: ${{ secrets.FONTS_SSH_KEY }}
+    steps:
+      - uses: actions/checkout@v7
+      - if: env.FONTS_SSH_KEY != '' && vars.FONTS_REPOSITORY != ''
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ vars.FONTS_REPOSITORY }}
+          ssh-key: ${{ secrets.FONTS_SSH_KEY }}
+          path: fonts-private
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+      - run: pnpm typecheck
+      - run: pnpm build
