@@ -24,18 +24,19 @@ function formatPrice(price: Price, currency: string, locale: string, labels: Lab
   return price.kind === 'from' ? labels.from.replace('{price}', amount) : amount;
 }
 
+function formatDate(iso: string, locale: string) {
+  const start = new Date(iso);
+  const format = (options: Intl.DateTimeFormatOptions) =>
+    new Intl.DateTimeFormat(locale, { ...options, timeZone: TIME_ZONE }).format(start);
+  return {
+    day: format({ day: 'numeric' }),
+    month: format({ month: 'short' }),
+    when: format({ weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' }),
+  };
+}
+
 function EventCard({ event, locale, labels }: { event: EsnEvent; locale: string; labels: Labels }) {
-  const start = new Date(event.start);
-  const day = new Intl.DateTimeFormat(locale, { day: 'numeric', timeZone: TIME_ZONE }).format(start);
-  const month = new Intl.DateTimeFormat(locale, { month: 'short', timeZone: TIME_ZONE }).format(start);
-  const when = new Intl.DateTimeFormat(locale, {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    hour: '2-digit',
-    minute: '2-digit',
-    timeZone: TIME_ZONE,
-  }).format(start);
+  const { day, month, when } = formatDate(event.start, locale);
 
   return (
     <li className="flex gap-5 rounded-2xl border-2 border-ink bg-paper p-5 shadow-hard">
@@ -88,5 +89,45 @@ export function EventList({ result, locale, labels, limit }: Props) {
         <EventCard key={event.id} event={event} locale={intlLocales[locale]} labels={labels} />
       ))}
     </ol>
+  );
+}
+
+/** Ticket-style card for the next event, shown in the home page hero. */
+export function NextEvent({ event, locale, labels }: { event: EsnEvent; locale: Locale; labels: Labels }) {
+  const intlLocale = intlLocales[locale];
+  const { day, month, when } = formatDate(event.start, intlLocale);
+
+  return (
+    <article
+      aria-labelledby="next-event-title"
+      className="rounded-2xl border-2 border-ink bg-paper shadow-hard-lg lg:rotate-[1.5deg]"
+    >
+      <header className="flex items-center justify-between gap-4 rounded-t-[0.875rem] bg-esn-blue px-6 py-4 text-paper">
+        <p className="font-black text-sm uppercase tracking-wider">{labels.next}</p>
+        <time dateTime={event.start} className="text-right font-heading leading-none">
+          <span className="block text-5xl">{day}</span>
+          <span className="block text-xl">{month}</span>
+        </time>
+      </header>
+      <div className="flex flex-col gap-1 border-ink border-t-2 border-dashed px-6 pt-5 pb-6">
+        <h2 id="next-event-title" className="font-heading text-3xl leading-tight">
+          {event.title}
+        </h2>
+        <p className="font-bold first-letter:uppercase">{when}</p>
+        {event.place && <p className="text-ink-soft">{event.place}</p>}
+        <div className="mt-4 flex items-center justify-between gap-4">
+          <a
+            href={event.url}
+            className="rounded-xl border-2 border-ink bg-esn-cyan px-5 py-3 font-black text-lg no-underline shadow-hard"
+          >
+            {labels.tickets}
+            <span className="sr-only">: {event.title}</span>
+          </a>
+          {event.price && (
+            <span className="font-black text-lg">{formatPrice(event.price, event.currency, intlLocale, labels)}</span>
+          )}
+        </div>
+      </div>
+    </article>
   );
 }

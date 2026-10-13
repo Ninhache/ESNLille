@@ -23,6 +23,7 @@
   },
   "events": {
     "title": "Upcoming events",
+    "next": "Next up",
     "metaDescription": "Parties, trips and cultural outings organised by ESN Lille for international students. Tickets on HelloAsso.",
     "seeAll": "All events",
     "tickets": "Tickets",

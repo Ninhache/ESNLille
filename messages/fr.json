@@ -23,6 +23,7 @@
   },
   "events": {
     "title": "Prochains événements",
+    "next": "Prochain rendez-vous",
     "metaDescription": "Soirées, voyages et sorties culturelles organisés par ESN Lille pour les étudiants internationaux. Billets sur HelloAsso.",
     "seeAll": "Tous les événements",
     "tickets": "Billets",
