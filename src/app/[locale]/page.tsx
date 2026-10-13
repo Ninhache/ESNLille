@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import { EventList, NextEvent } from '@/components/event-list';
+import { JsonLd } from '@/components/json-ld';
 import { getLocale, getMessages } from '@/i18n/dictionaries';
 import { getUpcomingEvents } from '@/lib/events';
 import { joinMailto } from '@/lib/links';
+import { organizationJsonLd } from '@/lib/seo/json-ld';
+import { siteUrl } from '@/lib/site';
 
 export const revalidate = 900;
 
@@ -56,6 +59,7 @@ export default async function HomePage() {
           />
         </section>
       )}
+      <JsonLd data={organizationJsonLd(siteUrl())} />
     </main>
   );
 }

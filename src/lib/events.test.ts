@@ -67,6 +67,23 @@ describe('toEvent', () => {
     expect(toEvent({ ...form, place: null })?.place).toBeUndefined();
   });
 
+  it('keeps the venue address for structured data', () => {
+    const place = {
+      name: 'MDE',
+      address: 'Cité Scientifique',
+      city: "Villeneuve-d'Ascq",
+      zipCode: '59650',
+      country: 'FRA',
+    };
+    expect(toEvent({ ...form, place })?.venue).toEqual({
+      name: 'MDE',
+      street: 'Cité Scientifique',
+      postalCode: '59650',
+      city: "Villeneuve-d'Ascq",
+    });
+    expect(toEvent({ ...form, place: { name: '', city: null } })?.venue).toBeUndefined();
+  });
+
   it('drops forms without a start date', () => {
     expect(toEvent({ ...form, startDate: null })).toBeNull();
   });
