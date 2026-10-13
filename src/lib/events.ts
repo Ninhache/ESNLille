@@ -6,6 +6,8 @@ const DEFAULT_ORGANIZATION = 'esn-lille';
 
 export type Price = { kind: 'free' } | { kind: 'fixed' | 'from'; cents: number };
 
+export type Venue = { name?: string; street?: string; postalCode?: string; city?: string };
+
 export type EsnEvent = {
   id: string;
   title: string;
@@ -13,6 +15,7 @@ export type EsnEvent = {
   start: string;
   end?: string;
   place?: string;
+  venue?: Venue;
   price?: Price;
   currency: string;
   url: string;
@@ -38,6 +41,18 @@ function formatPlace(form: FormPublic): string | undefined {
   return [...new Set(parts)].join(', ') || undefined;
 }
 
+function toVenue(form: FormPublic): Venue | undefined {
+  const place = form.place;
+  if (!place) return undefined;
+  const venue: Venue = {
+    name: place.name || undefined,
+    street: place.address || undefined,
+    postalCode: place.zipCode || undefined,
+    city: place.city || undefined,
+  };
+  return Object.values(venue).some(Boolean) ? venue : undefined;
+}
+
 /** Maps a HelloAsso public form to an event, or `null` when it lacks a slug, title, start date or URL. */
 export function toEvent(form: FormPublic): EsnEvent | null {
   if (!form.formSlug || !form.title || !form.startDate || !form.url) return null;
@@ -48,6 +63,7 @@ export function toEvent(form: FormPublic): EsnEvent | null {
     start: form.startDate,
     end: form.endDate ?? undefined,
     place: formatPlace(form),
+    venue: toVenue(form),
     price: summarizePrice(form),
     currency: form.currency ?? 'EUR',
     url: form.url,
@@ -89,13 +105,13 @@ async function clientFromEnv(env: NodeJS.ProcessEnv): Promise<HelloAssoClient | 
 
 let sharedClient: Promise<HelloAssoClient | null> | undefined;
 
-/** Upcoming events for the pages. Never throws: any failure becomes `unavailable`. */
-export async function getUpcomingEvents(): Promise<EventsResult> {
+/** Events that have not ended at `since` (now by default). Never throws: any failure becomes `unavailable`. */
+export async function getUpcomingEvents(since = Date.now()): Promise<EventsResult> {
   sharedClient ??= clientFromEnv(process.env);
   try {
     const client = await sharedClient;
     if (!client) return { status: 'unavailable' };
-    return { status: 'ok', events: await fetchUpcomingEvents(client, Date.now()) };
+    return { status: 'ok', events: await fetchUpcomingEvents(client, since) };
   } catch (error) {
     console.error('HelloAsso events unavailable:', error);
     return { status: 'unavailable' };

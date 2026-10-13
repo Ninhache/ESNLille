@@ -12,7 +12,27 @@
     "titleMark": "à Lille.",
     "lead": "Soirées, voyages, culture et sport avec des étudiants du monde entier, organisés par des bénévoles lillois.",
     "eventsCta": "Voir les prochains événements",
-    "volunteerCta": "Devenir bénévole"
+    "volunteerCta": "Devenir bénévole",
+    "stats": {
+      "title": "ESN Lille en chiffres",
+      "events": "événements par mois",
+      "students": "étudiants internationaux accueillis",
+      "volunteers": "bénévoles",
+      "years": "ans de vie Erasmus à Lille"
+    },
+    "esncard": {
+      "titleStart": "Prends ta",
+      "lead": "La carte de membre ESN : des événements moins chers à Lille et des réductions partout en Europe.",
+      "perks": [
+        "2 € de réduction sur chaque événement ESN Lille",
+        "Des réductions chez les partenaires ESN dans toute l'Europe",
+        "Reconnue par les sections ESN de plus de 40 pays"
+      ],
+      "pickup": "Achète-la en ligne, puis récupère-la à la MDE, Cité Scientifique.",
+      "partners": "Voir toutes les réductions",
+      "buy": "Acheter sur HelloAsso",
+      "cardTag": "Membre"
+    }
   },
   "join": {
     "mailSubject": "Bénévolat à ESN Lille"
@@ -31,6 +51,13 @@
     "from": "Dès {price}",
     "empty": "Aucun événement prévu pour l'instant. Les prochains sont annoncés sur HelloAsso.",
     "unavailable": "Les événements ne peuvent pas être chargés pour l'instant. Tu les retrouveras tous sur HelloAsso.",
-    "openHelloasso": "Ouvrir HelloAsso"
+    "openHelloasso": "Ouvrir HelloAsso",
+    "subscribe": {
+      "title": "Ne rate plus aucun événement",
+      "lead": "Abonne-toi une fois : les nouveaux événements ESN Lille apparaissent tout seuls dans ton agenda.",
+      "google": "Google Agenda",
+      "apple": "Apple / Outlook",
+      "raw": "Lien .ics"
+    }
   }
 }

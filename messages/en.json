@@ -12,7 +12,27 @@
     "titleMark": "in Lille.",
     "lead": "Parties, trips, culture and sports with students from all over the world, organised by local volunteers.",
     "eventsCta": "See upcoming events",
-    "volunteerCta": "Become a volunteer"
+    "volunteerCta": "Become a volunteer",
+    "stats": {
+      "title": "ESN Lille in numbers",
+      "events": "events a month",
+      "students": "international students welcomed",
+      "volunteers": "volunteers",
+      "years": "years of Erasmus life in Lille"
+    },
+    "esncard": {
+      "titleStart": "Get your",
+      "lead": "The ESN membership card: cheaper events in Lille and discounts all over Europe.",
+      "perks": [
+        "€2 off every ESN Lille event",
+        "Discounts with ESN partners across Europe",
+        "Recognised by ESN sections in 40+ countries"
+      ],
+      "pickup": "Buy it online, then pick it up at the MDE, Cité Scientifique.",
+      "partners": "See every discount",
+      "buy": "Buy on HelloAsso",
+      "cardTag": "Member"
+    }
   },
   "join": {
     "mailSubject": "Volunteering at ESN Lille"
@@ -31,6 +51,13 @@
     "from": "From {price}",
     "empty": "No events scheduled right now. New ones are announced on HelloAsso.",
     "unavailable": "Events can't be loaded right now. You'll find them all on HelloAsso.",
-    "openHelloasso": "Open HelloAsso"
+    "openHelloasso": "Open HelloAsso",
+    "subscribe": {
+      "title": "Never miss an event",
+      "lead": "Subscribe once: new ESN Lille events show up in your calendar on their own.",
+      "google": "Google Calendar",
+      "apple": "Apple / Outlook",
+      "raw": ".ics link"
+    }
   }
 }
