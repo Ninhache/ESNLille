@@ -30,6 +30,9 @@ Without them, the site builds with Oswald, the brand's stand-in.
 Pages are prerendered, so canonical and hreflang URLs are fixed at build time.
 Set `SITE_URL` (e.g. `https://lille.esnfrance.org`) when running `pnpm build`; it defaults to `http://localhost:3000`.
 
+On a host that must stay out of search engines (a preview or showcase), set `SITE_NOINDEX=1` at runtime:
+`robots.txt` then disallows everything and pages send `X-Robots-Tag: noindex, nofollow`.
+
 ### HelloAsso events
 
 Events come from the HelloAsso API. Its keys are created by an admin of the association's HelloAsso account
