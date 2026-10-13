@@ -59,5 +59,68 @@
       "apple": "Apple / Outlook",
       "raw": ".ics link"
     }
+  },
+  "partners": {
+    "title": "Partners",
+    "metaDescription": "ESNcard discounts with ESN Lille's partners: flights, buses, trains, bank, eSIM and bars in Lille.",
+    "lead": "Show your ESNcard and save. Here are the deals that matter most in Lille.",
+    "groups": {
+      "travel": "Travel",
+      "lille": "In Lille",
+      "everyday": "Everyday"
+    },
+    "seeOffer": "See the offer",
+    "moreTitle": "Hundreds more across Europe",
+    "moreLead": "The whole ESN network's discounts are on esncard.org.",
+    "moreLink": "Browse esncard.org",
+    "homeTitle": "Your ESNcard pays for itself",
+    "homeLead": "A few of our partners:",
+    "seeAll": "All partners",
+    "items": {
+      "ryanair": {
+        "kind": "Flights",
+        "offer": "15% off flights"
+      },
+      "flixbus": {
+        "kind": "Buses",
+        "offer": "10% off bus tickets"
+      },
+      "flixtrain": {
+        "kind": "Trains",
+        "offer": "15% off train tickets"
+      },
+      "flibco": {
+        "kind": "Airport shuttles",
+        "offer": "10% off airport shuttles"
+      },
+      "interrail": {
+        "kind": "Trains",
+        "offer": "The ESN Erasmus+ pass"
+      },
+      "ambassade": {
+        "kind": "Bar",
+        "offer": "Discounts on drinks"
+      },
+      "ohamo": {
+        "kind": "Watercolour café",
+        "offer": "10% off"
+      },
+      "revolut": {
+        "kind": "Bank",
+        "offer": "2 months of Premium and a free physical card"
+      },
+      "saily": {
+        "kind": "eSIM",
+        "offer": "5% off eSIMs"
+      },
+      "studcorp": {
+        "kind": "Insurance",
+        "offer": "Insurance offers for ESN members"
+      },
+      "zalando": {
+        "kind": "Clothes",
+        "offer": "A free €10 gift card and 10% off gift cards"
+      }
+    }
   }
 }
