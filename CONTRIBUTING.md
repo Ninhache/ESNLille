@@ -24,6 +24,11 @@ Lato comes from `@fontsource/lato`. Kelson Sans, the ESN display font, is licens
 put `kelson-sans-{light,normal,bold}.woff2` in `fonts-private/` (or point `KELSON_DIR` at them).
 Without them, the site builds with Oswald, the brand's stand-in.
 
+### Site URL
+
+Pages are prerendered, so canonical and hreflang URLs are fixed at build time.
+Set `SITE_URL` (e.g. `https://lille.esnfrance.org`) when running `pnpm build`; it defaults to `http://localhost:3000`.
+
 ## Branches
 
 - `main` is what runs in production. `develop` is the integration branch.
