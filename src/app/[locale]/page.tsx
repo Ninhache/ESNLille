@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import { EventList, NextEvent } from '@/components/event-list';
 import { JsonLd } from '@/components/json-ld';
+import { StatsStrip } from '@/components/stats-strip';
 import { getLocale, getMessages } from '@/i18n/dictionaries';
 import { getUpcomingEvents } from '@/lib/events';
 import { joinMailto } from '@/lib/links';
 import { organizationJsonLd } from '@/lib/seo/json-ld';
 import { siteUrl } from '@/lib/site';
+import { getStats } from '@/lib/stats';
 
 export const revalidate = 900;
 
@@ -41,6 +43,7 @@ export default async function HomePage() {
         </div>
         {next && <NextEvent event={next} locale={locale} labels={messages.events} />}
       </div>
+      <StatsStrip stats={getStats(new Date())} locale={locale} labels={home.stats} />
       {(!next || later.length > 0) && (
         <section aria-labelledby="events-title" className="mt-20">
           <div className="mb-6 flex flex-wrap items-baseline justify-between gap-4">
