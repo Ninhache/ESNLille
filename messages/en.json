@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "ESN Lille",
+    "description": "Erasmus Student Network Lille: events, trips and support for international students in Lille."
+  },
+  "header": {
+    "join": "Join us",
+    "switchLocale": "Version française"
+  },
+  "home": {
+    "titleStart": "Your Erasmus diary starts",
+    "titleMark": "in Lille.",
+    "lead": "Parties, trips, culture and sports with students from all over the world, organised by local volunteers.",
+    "eventsCta": "See upcoming events",
+    "volunteerCta": "Become a volunteer"
+  },
+  "join": {
+    "mailSubject": "Volunteering at ESN Lille"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to the home page"
+  },
+  "events": {
+    "title": "Upcoming events",
+    "next": "Next up",
+    "metaDescription": "Parties, trips and cultural outings organised by ESN Lille for international students. Tickets on HelloAsso.",
+    "seeAll": "All events",
+    "tickets": "Tickets",
+    "free": "Free",
+    "from": "From {price}",
+    "empty": "No events scheduled right now. New ones are announced on HelloAsso.",
+    "unavailable": "Events can't be loaded right now. You'll find them all on HelloAsso.",
+    "openHelloasso": "Open HelloAsso"
+  }
+}

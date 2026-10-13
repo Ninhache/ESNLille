@@ -1,0 +1,49 @@
+{
+  "welcome-party": {
+    "place": {
+      "name": "Gare Saint Sauveur",
+      "address": "17 boulevard Jean-Baptiste Lebas",
+      "city": "Lille",
+      "zipCode": "59000",
+      "country": "FRA"
+    },
+    "tiers": [{ "id": 101, "label": "Entry", "tierType": "Registration", "price": 500 }]
+  },
+  "soiree-crepes-et-jeux": {
+    "place": {
+      "name": "Maison de l'étudiant",
+      "address": "Cité scientifique",
+      "city": "Villeneuve-d'Ascq",
+      "zipCode": "59650",
+      "country": "FRA"
+    },
+    "tiers": [{ "id": 201, "label": "Entry", "tierType": "Registration", "price": 300 }]
+  },
+  "halloween-party": {
+    "place": {
+      "name": "Gare Saint Sauveur",
+      "address": "17 boulevard Jean-Baptiste Lebas",
+      "city": "Lille",
+      "zipCode": "59000",
+      "country": "FRA"
+    },
+    "tiers": [{ "id": 301, "label": "Entry", "tierType": "Registration", "price": 0 }]
+  },
+  "weekend-a-bruges": {
+    "place": { "name": null, "address": null, "city": "Bruges", "zipCode": null, "country": "BEL" },
+    "tiers": [
+      { "id": 401, "label": "ESNcard holder", "tierType": "Registration", "price": 4500 },
+      { "id": 402, "label": "Standard", "tierType": "Registration", "price": 5500 }
+    ]
+  },
+  "visite-louvre-lens": {
+    "place": {
+      "name": "Louvre-Lens",
+      "address": "99 rue Paul Bert",
+      "city": "Lens",
+      "zipCode": "62300",
+      "country": "FRA"
+    },
+    "tiers": []
+  }
+}

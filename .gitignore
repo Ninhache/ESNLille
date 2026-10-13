@@ -1,14 +1,19 @@
 /*
 
 !/.gitignore
+!/.gitattributes
+!/.editorconfig
 !/.dockerignore
 !/.github/
+!/.husky/
 !/Dockerfile
+!/compose.yaml
 
 !/package.json
 !/pnpm-lock.yaml
 !/biome.json
 !/tsconfig.json
+!/vitest.config.ts
 !/next.config.ts
 !/postcss.config.mjs
 
@@ -16,7 +21,9 @@
 !/public/
 !/content/
 !/messages/
+!/scripts/
 
+/src/fonts/
 *.md
 .env*
 *.zip
@@ -24,3 +31,6 @@
 .claude/
 CLAUDE.md
 AGENTS.md
+
+!/CONTRIBUTING.md
+!/.github/pull_request_template.md
