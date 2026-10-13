@@ -1,8 +1,15 @@
-import { getMessages } from '@/i18n/dictionaries';
-import { HELLOASSO_URL, joinMailto } from '@/lib/links';
+import Link from 'next/link';
+import { EventList } from '@/components/event-list';
+import { getLocale, getMessages } from '@/i18n/dictionaries';
+import { getUpcomingEvents } from '@/lib/events';
+import { joinMailto } from '@/lib/links';
+
+export const revalidate = 900;
+
+const HOME_EVENT_COUNT = 4;
 
 export default async function HomePage() {
-  const messages = await getMessages();
+  const [locale, messages, events] = await Promise.all([getLocale(), getMessages(), getUpcomingEvents()]);
   const { home } = messages;
 
   return (
@@ -12,12 +19,12 @@ export default async function HomePage() {
       </h1>
       <p className="mt-6 max-w-xl text-xl leading-relaxed">{home.lead}</p>
       <div className="mt-8 flex flex-wrap gap-4">
-        <a
-          href={HELLOASSO_URL}
+        <Link
+          href={`/${locale}/events`}
           className="rounded-2xl border-2 border-ink bg-ink px-6 py-4 font-black text-lg text-paper no-underline shadow-[5px_5px_0_var(--color-esn-cyan)]"
         >
           {home.eventsCta}
-        </a>
+        </Link>
         <a
           href={joinMailto(messages.join.mailSubject)}
           className="rounded-2xl border-2 border-ink bg-paper px-6 py-4 font-black text-lg no-underline shadow-[5px_5px_0_var(--color-ink)]"
@@ -25,6 +32,17 @@ export default async function HomePage() {
           {home.volunteerCta}
         </a>
       </div>
+      <section aria-labelledby="events-title" className="mt-20">
+        <div className="mb-6 flex flex-wrap items-baseline justify-between gap-4">
+          <h2 id="events-title" className="font-heading text-[clamp(2rem,4.5vw,3.25rem)] leading-none">
+            {messages.events.title}
+          </h2>
+          <Link href={`/${locale}/events`} className="font-black">
+            {messages.events.seeAll}
+          </Link>
+        </div>
+        <EventList result={events} locale={locale} labels={messages.events} limit={HOME_EVENT_COUNT} />
+      </section>
     </main>
   );
 }

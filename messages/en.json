@@ -20,5 +20,16 @@
   "notFound": {
     "title": "Page not found",
     "back": "Back to the home page"
+  },
+  "events": {
+    "title": "Upcoming events",
+    "metaDescription": "Parties, trips and cultural outings organised by ESN Lille for international students. Tickets on HelloAsso.",
+    "seeAll": "All events",
+    "tickets": "Tickets",
+    "free": "Free",
+    "from": "From {price}",
+    "empty": "No events scheduled right now. New ones are announced on HelloAsso.",
+    "unavailable": "Events can't be loaded right now. You'll find them all on HelloAsso.",
+    "openHelloasso": "Open HelloAsso"
   }
 }

@@ -12,6 +12,7 @@
 !/pnpm-lock.yaml
 !/biome.json
 !/tsconfig.json
+!/vitest.config.ts
 !/next.config.ts
 !/postcss.config.mjs
 

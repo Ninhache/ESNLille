@@ -20,5 +20,16 @@
   "notFound": {
     "title": "Page introuvable",
     "back": "Retour à l'accueil"
+  },
+  "events": {
+    "title": "Prochains événements",
+    "metaDescription": "Soirées, voyages et sorties culturelles organisés par ESN Lille pour les étudiants internationaux. Billets sur HelloAsso.",
+    "seeAll": "Tous les événements",
+    "tickets": "Billets",
+    "free": "Gratuit",
+    "from": "Dès {price}",
+    "empty": "Aucun événement prévu pour l'instant. Les prochains sont annoncés sur HelloAsso.",
+    "unavailable": "Les événements ne peuvent pas être chargés pour l'instant. Tu les retrouveras tous sur HelloAsso.",
+    "openHelloasso": "Ouvrir HelloAsso"
   }
 }

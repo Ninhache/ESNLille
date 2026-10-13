@@ -15,6 +15,7 @@ pnpm dev
 | `pnpm check` | Biome lint and format check |
 | `pnpm check:fix` | Biome with safe fixes applied |
 | `pnpm typecheck` | Route types and TypeScript |
+| `pnpm test` | Unit tests (Vitest) |
 | `pnpm build` | Production build |
 | `pnpm fonts` | Prepares the display font (run by `dev` and `build`) |
 
@@ -28,6 +29,21 @@ Without them, the site builds with Oswald, the brand's stand-in.
 
 Pages are prerendered, so canonical and hreflang URLs are fixed at build time.
 Set `SITE_URL` (e.g. `https://lille.esnfrance.org`) when running `pnpm build`; it defaults to `http://localhost:3000`.
+
+### HelloAsso events
+
+Events come from the HelloAsso API. Its keys are created by an admin of the association's HelloAsso account
+(the API client needs the `AccessPublicData` privilege).
+
+| Variable | Default |
+| --- | --- |
+| `HELLOASSO_CLIENT_ID`, `HELLOASSO_CLIENT_SECRET` | none |
+| `HELLOASSO_ORGANIZATION` | `esn-lille` |
+| `HELLOASSO_API_URL` | `https://api.helloasso.com` (sandbox: `https://api.helloasso-sandbox.com`) |
+| `HELLOASSO_MOCK` | set to `1` to serve sample events in a production build |
+
+Without keys, `pnpm dev` serves sample events. A production build without keys shows a link to HelloAsso instead;
+with keys, pages refresh their events every 15 minutes.
 
 ## Branches
 
