@@ -1,0 +1,16 @@
+*
+
+!package.json
+!pnpm-lock.yaml
+!next.config.ts
+!tsconfig.json
+!postcss.config.mjs
+!src/
+!public/
+!content/
+!messages/
+!scripts/
+!fonts-private/*.woff2
+
+src/fonts/
+**/*.test.ts
