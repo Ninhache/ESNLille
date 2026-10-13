@@ -12,7 +12,14 @@
     "titleMark": "in Lille.",
     "lead": "Parties, trips, culture and sports with students from all over the world, organised by local volunteers.",
     "eventsCta": "See upcoming events",
-    "volunteerCta": "Become a volunteer"
+    "volunteerCta": "Become a volunteer",
+    "stats": {
+      "title": "ESN Lille in numbers",
+      "events": "events a month",
+      "students": "international students welcomed",
+      "volunteers": "volunteers",
+      "years": "years of Erasmus life in Lille"
+    }
   },
   "join": {
     "mailSubject": "Volunteering at ESN Lille"

@@ -12,7 +12,14 @@
     "titleMark": "à Lille.",
     "lead": "Soirées, voyages, culture et sport avec des étudiants du monde entier, organisés par des bénévoles lillois.",
     "eventsCta": "Voir les prochains événements",
-    "volunteerCta": "Devenir bénévole"
+    "volunteerCta": "Devenir bénévole",
+    "stats": {
+      "title": "ESN Lille en chiffres",
+      "events": "événements par mois",
+      "students": "étudiants internationaux accueillis",
+      "volunteers": "bénévoles",
+      "years": "ans de vie Erasmus à Lille"
+    }
   },
   "join": {
     "mailSubject": "Bénévolat à ESN Lille"
