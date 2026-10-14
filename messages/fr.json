@@ -5,7 +5,13 @@
   },
   "header": {
     "join": "Nous rejoindre",
-    "switchLocale": "English version"
+    "switchLocale": "English version",
+    "nav": {
+      "label": "Principale",
+      "events": "Événements",
+      "partners": "Partenaires",
+      "team": "Équipe"
+    }
   },
   "home": {
     "titleStart": "Ton carnet Erasmus commence",
@@ -47,6 +53,9 @@
     "next": "Prochain rendez-vous",
     "metaDescription": "Soirées, voyages et sorties culturelles organisés par ESN Lille pour les étudiants internationaux. Billets sur HelloAsso.",
     "seeAll": "Tous les événements",
+    "allPoles": "Tous",
+    "poleFilter": "Filtrer les événements par pôle",
+    "poleTitle": "{pole} : prochains événements",
     "tickets": "Billets",
     "free": "Gratuit",
     "from": "Dès {price}",
@@ -124,6 +133,61 @@
       "studcorp": {
         "kind": "Assurance",
         "offer": "Des offres d'assurance pour les membres ESN"
+      }
+    }
+  },
+  "team": {
+    "title": "L'équipe",
+    "metaDescription": "Les étudiants bénévoles qui font vivre ESN Lille : le bureau et les pôles derrière chaque événement.",
+    "lead": "ESN Lille est entièrement portée par des étudiants bénévoles. Voici le bureau de cette année et les pôles qui font vivre chaque événement.",
+    "boardTitle": "Le bureau",
+    "polesTitle": "Les pôles",
+    "polesLead": "Chaque événement naît dans un pôle. Rejoins-en un : pas besoin d'expérience, juste un peu de temps et de bonne humeur.",
+    "ledBy": "Animé par",
+    "seeEvents": "Voir ses événements",
+    "joinCta": "Rejoindre un pôle",
+    "roles": {
+      "coPresident": {
+        "name": "Coprésidence",
+        "mission": "Fixer le cap de l'association, la représenter auprès des universités, de la ville et du réseau ESN, et coordonner les pôles."
+      },
+      "vicePresident": {
+        "name": "Vice-présidence",
+        "mission": "Épauler la coprésidence, la remplacer si besoin et suivre au quotidien les projets des pôles."
+      },
+      "secretary": {
+        "name": "Secrétariat",
+        "mission": "Tenir l'administratif : comptes rendus, assemblées générales, registre des adhérents et démarches officielles."
+      },
+      "treasurer": {
+        "name": "Trésorerie",
+        "mission": "Tenir les comptes : budget, paiements et billetterie, contrats partenaires et demandes de subventions."
+      },
+      "operationsManager": {
+        "name": "Opérations",
+        "mission": "Faire tourner les événements sur le terrain : logistique, matériel, lieux et plannings des bénévoles."
+      }
+    },
+    "poles": {
+      "sports": {
+        "name": "Sport",
+        "description": "Séances de sport, tournois et journées en plein air."
+      },
+      "communication": {
+        "name": "Communication",
+        "description": "Instagram, TikTok, affiches et photos : faire savoir ce qui arrive."
+      },
+      "party": {
+        "name": "Soirées",
+        "description": "Soirées à thème et grandes nuits lilloises : lieux, ambiance et billetterie."
+      },
+      "culture": {
+        "name": "Culture",
+        "description": "Visites, découvertes de la ville et sorties culturelles à Lille et autour."
+      },
+      "hr": {
+        "name": "RH",
+        "description": "Accueil des nouveaux bénévoles, cohésion de l'équipe et soin de celles et ceux qui donnent de leur temps."
       }
     }
   }
