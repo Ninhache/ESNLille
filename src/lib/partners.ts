@@ -89,25 +89,11 @@ export const PARTNERS: Partner[] = [
     featured: true,
   },
   {
-    id: 'saily',
-    name: 'Saily',
-    group: 'everyday',
-    url: 'https://esncard.org/discount/saily',
-    logo: { width: 128, height: 128 },
-  },
-  {
     id: 'studcorp',
     name: 'Studcorp',
     group: 'everyday',
     url: 'https://studcorp.com/en/partner-en/esn',
     logo: { width: 128, height: 128 },
-  },
-  {
-    id: 'zalando',
-    name: 'Zalando',
-    group: 'everyday',
-    url: 'https://esncard.org/discount/zalando-gift-cards',
-    logo: { width: 512, height: 93 },
   },
 ];
 
