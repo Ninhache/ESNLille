@@ -59,5 +59,68 @@
       "apple": "Apple / Outlook",
       "raw": "Lien .ics"
     }
+  },
+  "partners": {
+    "title": "Partenaires",
+    "metaDescription": "Les réductions ESNcard chez les partenaires d'ESN Lille : avion, bus, train, banque, eSIM et bars à Lille.",
+    "lead": "Montre ton ESNcard et économise. Voici les bons plans qui comptent le plus à Lille.",
+    "groups": {
+      "travel": "Voyager",
+      "lille": "À Lille",
+      "everyday": "Au quotidien"
+    },
+    "seeOffer": "Voir l'offre",
+    "moreTitle": "Des centaines d'autres en Europe",
+    "moreLead": "Toutes les réductions du réseau ESN sont sur esncard.org.",
+    "moreLink": "Parcourir esncard.org",
+    "homeTitle": "Ton ESNcard est vite rentabilisée",
+    "homeLead": "Quelques-uns de nos partenaires :",
+    "seeAll": "Tous les partenaires",
+    "items": {
+      "ryanair": {
+        "kind": "Avion",
+        "offer": "15 % de réduction sur les vols"
+      },
+      "flixbus": {
+        "kind": "Bus",
+        "offer": "10 % de réduction sur les billets de bus"
+      },
+      "flixtrain": {
+        "kind": "Train",
+        "offer": "15 % de réduction sur les billets de train"
+      },
+      "flibco": {
+        "kind": "Navettes aéroport",
+        "offer": "10 % de réduction sur les navettes"
+      },
+      "interrail": {
+        "kind": "Train",
+        "offer": "Le pass ESN Erasmus+"
+      },
+      "ambassade": {
+        "kind": "Bar",
+        "offer": "Des réductions sur les boissons"
+      },
+      "ohamo": {
+        "kind": "Café aquarelle",
+        "offer": "10 % de réduction"
+      },
+      "revolut": {
+        "kind": "Banque",
+        "offer": "2 mois de Premium et une carte physique offerte"
+      },
+      "saily": {
+        "kind": "eSIM",
+        "offer": "5 % de réduction sur les eSIM"
+      },
+      "studcorp": {
+        "kind": "Assurance",
+        "offer": "Des offres d'assurance pour les membres ESN"
+      },
+      "zalando": {
+        "kind": "Vêtements",
+        "offer": "Une carte cadeau de 10 € offerte et 10 % sur les cartes cadeaux"
+      }
+    }
   }
 }
