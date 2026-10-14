@@ -28,7 +28,8 @@
         "Discounts with ESN partners across Europe",
         "Recognised by ESN sections in 40+ countries"
       ],
-      "pickup": "Buy it online, then pick it up at one of our events or arrange a time with us on WhatsApp.",
+      "pickup": "Buy it online, then pick it up at one of our events or arrange a time with us on",
+      "pickupLink": "WhatsApp",
       "partners": "See every discount",
       "buy": "Buy on HelloAsso",
       "cardTag": "Member"
@@ -120,17 +121,9 @@
         "kind": "Bank",
         "offer": "2 months of Premium and a free physical card"
       },
-      "saily": {
-        "kind": "eSIM",
-        "offer": "5% off eSIMs"
-      },
       "studcorp": {
         "kind": "Insurance",
         "offer": "Insurance offers for ESN members"
-      },
-      "zalando": {
-        "kind": "Clothes",
-        "offer": "A free €10 gift card and 10% off gift cards"
       }
     }
   }

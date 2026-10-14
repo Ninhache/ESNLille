@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { intlLocales, type Locale } from '@/i18n/config';
 import type { Messages } from '@/i18n/dictionaries';
 import { ESNCARD } from '@/lib/esncard';
+import { ORGANIZATION } from '@/lib/site';
 
 const PERK_MARKS = ['var(--color-esn-cyan)', 'var(--color-esn-magenta)', 'var(--color-esn-green)'];
 
@@ -39,6 +40,10 @@ export function EsncardBlock({ locale, labels }: Props) {
         </ul>
         <p className="mt-6 max-w-xl text-ink-soft">
           {labels.pickup}{' '}
+          <a href={ORGANIZATION.socials.whatsapp} className="font-bold text-ink">
+            {labels.pickupLink}
+          </a>
+          .{' '}
           <Link href={`/${locale}/partners`} className="font-bold text-ink">
             {labels.partners}
           </Link>
