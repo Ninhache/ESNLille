@@ -73,6 +73,14 @@ export const PARTNERS: Partner[] = [
     place: { lat: 50.631844, lng: 3.0628037, address: '6 rue Jeanne Maillotte, 59800 Lille' },
   },
   {
+    id: 'fuaj',
+    name: 'HI Lille',
+    group: 'lille',
+    url: 'https://esncard.org/discount/auberges-de-jeunesse-fuaj-hi-france-youth-hostels',
+    logo: { width: 149, height: 128 },
+    place: { lat: 50.6247159, lng: 3.0805059, address: '235 boulevard Paul Painlevé, 59000 Lille' },
+  },
+  {
     id: 'revolut',
     name: 'Revolut',
     group: 'everyday',

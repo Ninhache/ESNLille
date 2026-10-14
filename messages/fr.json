@@ -112,6 +112,10 @@
         "kind": "Café aquarelle",
         "offer": "10 % de réduction"
       },
+      "fuaj": {
+        "kind": "Auberge de jeunesse",
+        "offer": "5 % sur le séjour et la carte HI offerte"
+      },
       "revolut": {
         "kind": "Banque",
         "offer": "2 mois de Premium et une carte physique offerte"
