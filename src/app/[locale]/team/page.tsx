@@ -38,7 +38,7 @@ export default async function TeamPage() {
           {labels.polesTitle}
         </h2>
         <p className="mt-3 mb-6 max-w-2xl text-lg leading-relaxed">{labels.polesLead}</p>
-        <ul className="grid gap-6 sm:grid-cols-2">
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {POLES.map(pole => {
             const leads = leadsOf(pole);
             return (

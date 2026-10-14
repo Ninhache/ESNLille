@@ -12,18 +12,19 @@ export type Member = {
 };
 
 export const POLE_MARKS: Record<PoleId, string> = {
-  events: 'var(--color-esn-magenta)',
-  culture: 'var(--color-esn-orange)',
-  communication: 'var(--color-esn-cyan)',
   sports: 'var(--color-esn-green)',
+  communication: 'var(--color-esn-cyan)',
+  party: 'var(--color-esn-magenta)',
+  culture: 'var(--color-esn-orange)',
+  hr: 'color-mix(in srgb, var(--color-esn-blue) 45%, var(--color-paper))',
 };
 
-export const POLES: PoleId[] = ['events', 'culture', 'communication', 'sports'];
+export const POLES: PoleId[] = ['sports', 'communication', 'party', 'culture', 'hr'];
 
 export const BOARD: Member[] = [
   { id: 'leonard', name: 'Léonard', role: 'coPresident' },
   { id: 'romane', name: 'Romane', role: 'coPresident' },
-  { id: 'melina', name: 'Melina', role: 'vicePresident' },
+  { id: 'melina', name: 'Mélina', role: 'vicePresident' },
   { id: 'zoe', name: 'Zoé', role: 'secretary' },
   { id: 'rimes', name: 'Rimes', role: 'treasurer' },
   { id: 'yves', name: 'Yves', role: 'operationsManager' },

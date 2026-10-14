@@ -150,21 +150,25 @@
       "operationsManager": "Operations manager"
     },
     "poles": {
-      "events": {
-        "name": "Events",
-        "description": "Parties, trips and the big nights out: planning, venues and tickets."
-      },
-      "culture": {
-        "name": "Culture",
-        "description": "Visits, city discoveries and cultural outings in and around Lille."
+      "sports": {
+        "name": "Sports",
+        "description": "Sports sessions, tournaments and days outdoors."
       },
       "communication": {
         "name": "Communication",
         "description": "Instagram, TikTok, posters and photos: letting everyone know what's coming."
       },
-      "sports": {
-        "name": "Sports",
-        "description": "Sports sessions, tournaments and days outdoors."
+      "party": {
+        "name": "Parties",
+        "description": "Themed parties and big nights out in Lille: venues, vibe and tickets."
+      },
+      "culture": {
+        "name": "Culture",
+        "description": "Visits, city discoveries and cultural outings in and around Lille."
+      },
+      "hr": {
+        "name": "HR",
+        "description": "Welcoming new volunteers, keeping the team close and looking after everyone who gives their time."
       }
     }
   }
