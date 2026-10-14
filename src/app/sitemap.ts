@@ -6,6 +6,7 @@ const PAGES: { path: string; changeFrequency: 'daily' | 'weekly'; priority: numb
   { path: '', changeFrequency: 'weekly', priority: 1 },
   { path: '/events', changeFrequency: 'daily', priority: 0.8 },
   { path: '/partners', changeFrequency: 'weekly', priority: 0.6 },
+  { path: '/team', changeFrequency: 'weekly', priority: 0.5 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

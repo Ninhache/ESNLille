@@ -5,7 +5,13 @@
   },
   "header": {
     "join": "Join us",
-    "switchLocale": "Version française"
+    "switchLocale": "Version française",
+    "nav": {
+      "label": "Main",
+      "events": "Events",
+      "partners": "Partners",
+      "team": "Team"
+    }
   },
   "home": {
     "titleStart": "Your Erasmus diary starts",
@@ -124,6 +130,45 @@
       "studcorp": {
         "kind": "Insurance",
         "offer": "Insurance offers for ESN members"
+      }
+    }
+  },
+  "team": {
+    "title": "The team",
+    "metaDescription": "Meet the student volunteers who run ESN Lille: the board and the poles behind every event.",
+    "lead": "ESN Lille is run entirely by student volunteers. Meet this year's board and the poles that make every event happen.",
+    "boardTitle": "The board",
+    "polesTitle": "The poles",
+    "polesLead": "Every event starts in a pole. Join one: no experience needed, just some time and good vibes.",
+    "ledBy": "Led by",
+    "joinCta": "Join a pole",
+    "roles": {
+      "president": "President",
+      "vicePresident": "Vice-president",
+      "secretary": "Secretary",
+      "treasurer": "Treasurer",
+      "eventsCoordinator": "Events coordinator",
+      "eventsManager": "Events manager",
+      "cultureManager": "Culture manager",
+      "communicationManager": "Communication manager",
+      "sportsManager": "Sports manager"
+    },
+    "poles": {
+      "events": {
+        "name": "Events",
+        "description": "Parties, trips and the big nights out: planning, venues and tickets."
+      },
+      "culture": {
+        "name": "Culture",
+        "description": "Visits, city discoveries and cultural outings in and around Lille."
+      },
+      "communication": {
+        "name": "Communication",
+        "description": "Instagram, TikTok, posters and photos: letting everyone know what's coming."
+      },
+      "sports": {
+        "name": "Sports",
+        "description": "Sports sessions, tournaments and days outdoors."
       }
     }
   }

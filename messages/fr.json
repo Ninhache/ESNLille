@@ -5,7 +5,13 @@
   },
   "header": {
     "join": "Nous rejoindre",
-    "switchLocale": "English version"
+    "switchLocale": "English version",
+    "nav": {
+      "label": "Principale",
+      "events": "Événements",
+      "partners": "Partenaires",
+      "team": "Équipe"
+    }
   },
   "home": {
     "titleStart": "Ton carnet Erasmus commence",
@@ -124,6 +130,45 @@
       "studcorp": {
         "kind": "Assurance",
         "offer": "Des offres d'assurance pour les membres ESN"
+      }
+    }
+  },
+  "team": {
+    "title": "L'équipe",
+    "metaDescription": "Les étudiants bénévoles qui font vivre ESN Lille : le bureau et les pôles derrière chaque événement.",
+    "lead": "ESN Lille est entièrement portée par des étudiants bénévoles. Voici le bureau de cette année et les pôles qui font vivre chaque événement.",
+    "boardTitle": "Le bureau",
+    "polesTitle": "Les pôles",
+    "polesLead": "Chaque événement naît dans un pôle. Rejoins-en un : pas besoin d'expérience, juste un peu de temps et de bonne humeur.",
+    "ledBy": "Animé par",
+    "joinCta": "Rejoindre un pôle",
+    "roles": {
+      "president": "Président",
+      "vicePresident": "Vice-président",
+      "secretary": "Secrétaire",
+      "treasurer": "Trésorier",
+      "eventsCoordinator": "Coordination des événements",
+      "eventsManager": "Responsable événements",
+      "cultureManager": "Responsable culture",
+      "communicationManager": "Responsable communication",
+      "sportsManager": "Responsable sport"
+    },
+    "poles": {
+      "events": {
+        "name": "Événements",
+        "description": "Soirées, voyages et grands rendez-vous : organisation, lieux et billetterie."
+      },
+      "culture": {
+        "name": "Culture",
+        "description": "Visites, découvertes de la ville et sorties culturelles à Lille et autour."
+      },
+      "communication": {
+        "name": "Communication",
+        "description": "Instagram, TikTok, affiches et photos : faire savoir ce qui arrive."
+      },
+      "sports": {
+        "name": "Sport",
+        "description": "Séances de sport, tournois et journées en plein air."
       }
     }
   }
