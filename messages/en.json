@@ -76,6 +76,13 @@
     "homeTitle": "Your ESNcard pays for itself",
     "homeLead": "A few of our partners:",
     "seeAll": "All partners",
+    "map": {
+      "title": "On the map",
+      "lead": "The ESN Lille office and the partners to visit with your ESNcard.",
+      "label": "Map of Lille with the ESN office and partners",
+      "office": "ESN Lille office",
+      "officeDetail": "Maison des Associations, 2nd floor"
+    },
     "items": {
       "ryanair": {
         "kind": "Flights",
@@ -104,6 +111,10 @@
       "ohamo": {
         "kind": "Watercolour café",
         "offer": "10% off"
+      },
+      "fuaj": {
+        "kind": "Youth hostel",
+        "offer": "5% off your stay and a free HI membership card"
       },
       "revolut": {
         "kind": "Bank",

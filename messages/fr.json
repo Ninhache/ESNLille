@@ -76,6 +76,13 @@
     "homeTitle": "Ton ESNcard est vite rentabilisée",
     "homeLead": "Quelques-uns de nos partenaires :",
     "seeAll": "Tous les partenaires",
+    "map": {
+      "title": "Sur la carte",
+      "lead": "Le bureau d'ESN Lille et les partenaires où passer avec ton ESNcard.",
+      "label": "Carte de Lille avec le bureau ESN et les partenaires",
+      "office": "Bureau d'ESN Lille",
+      "officeDetail": "Maison des Associations, 2e étage"
+    },
     "items": {
       "ryanair": {
         "kind": "Avion",
@@ -104,6 +111,10 @@
       "ohamo": {
         "kind": "Café aquarelle",
         "offer": "10 % de réduction"
+      },
+      "fuaj": {
+        "kind": "Auberge de jeunesse",
+        "offer": "5 % sur le séjour et la carte HI offerte"
       },
       "revolut": {
         "kind": "Banque",
