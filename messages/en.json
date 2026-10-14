@@ -143,15 +143,11 @@
     "ledBy": "Led by",
     "joinCta": "Join a pole",
     "roles": {
-      "president": "President",
+      "coPresident": "Co-president",
       "vicePresident": "Vice-president",
       "secretary": "Secretary",
       "treasurer": "Treasurer",
-      "eventsCoordinator": "Events coordinator",
-      "eventsManager": "Events manager",
-      "cultureManager": "Culture manager",
-      "communicationManager": "Communication manager",
-      "sportsManager": "Sports manager"
+      "operationsManager": "Operations manager"
     },
     "poles": {
       "events": {

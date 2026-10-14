@@ -39,25 +39,27 @@ export default async function TeamPage() {
         </h2>
         <p className="mt-3 mb-6 max-w-2xl text-lg leading-relaxed">{labels.polesLead}</p>
         <ul className="grid gap-6 sm:grid-cols-2">
-          {POLES.map(pole => (
-            <li
-              key={pole}
-              className="flex flex-col gap-3 rounded-2xl border-2 border-ink bg-paper px-6 py-5 shadow-hard"
-            >
-              <h3 className="font-heading text-3xl leading-none">
-                <span className="mark" style={{ '--mark': POLE_MARKS[pole] } as React.CSSProperties}>
-                  {labels.poles[pole].name}
-                </span>
-              </h3>
-              <p className="text-lg leading-relaxed">{labels.poles[pole].description}</p>
-              <p className="mt-auto font-bold text-ink-soft">
-                {labels.ledBy}{' '}
-                {leadsOf(pole)
-                  .map(member => member.name)
-                  .join(', ')}
-              </p>
-            </li>
-          ))}
+          {POLES.map(pole => {
+            const leads = leadsOf(pole);
+            return (
+              <li
+                key={pole}
+                className="flex flex-col gap-3 rounded-2xl border-2 border-ink bg-paper px-6 py-5 shadow-hard"
+              >
+                <h3 className="font-heading text-3xl leading-none">
+                  <span className="mark" style={{ '--mark': POLE_MARKS[pole] } as React.CSSProperties}>
+                    {labels.poles[pole].name}
+                  </span>
+                </h3>
+                <p className="text-lg leading-relaxed">{labels.poles[pole].description}</p>
+                {leads.length > 0 && (
+                  <p className="mt-auto font-bold text-ink-soft">
+                    {labels.ledBy} {leads.map(member => member.name).join(', ')}
+                  </p>
+                )}
+              </li>
+            );
+          })}
         </ul>
         <a
           href={joinMailto(messages.join.mailSubject)}

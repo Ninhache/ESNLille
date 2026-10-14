@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import en from '../../messages/en.json';
 import fr from '../../messages/fr.json';
-import { BOARD, leadsOf, POLES, photoSrc } from './team';
+import { BOARD, POLES, photoSrc } from './team';
 
 describe('team', () => {
   it('should have copy in both languages for every role and pole', () => {
@@ -18,12 +18,6 @@ describe('team', () => {
 
   it('should give every member a unique id', () => {
     expect(new Set(BOARD.map(member => member.id)).size).toBe(BOARD.length);
-  });
-
-  it('should give every pole at least one lead', () => {
-    for (const pole of POLES) {
-      expect(leadsOf(pole).length, pole).toBeGreaterThan(0);
-    }
   });
 
   it('should ship a photo file for every member with a photo', () => {

@@ -143,15 +143,11 @@
     "ledBy": "Animé par",
     "joinCta": "Rejoindre un pôle",
     "roles": {
-      "president": "Président",
-      "vicePresident": "Vice-président",
-      "secretary": "Secrétaire",
-      "treasurer": "Trésorier",
-      "eventsCoordinator": "Coordination des événements",
-      "eventsManager": "Responsable événements",
-      "cultureManager": "Responsable culture",
-      "communicationManager": "Responsable communication",
-      "sportsManager": "Responsable sport"
+      "coPresident": "Coprésidence",
+      "vicePresident": "Vice-présidence",
+      "secretary": "Secrétariat",
+      "treasurer": "Trésorerie",
+      "operationsManager": "Opérations"
     },
     "poles": {
       "events": {

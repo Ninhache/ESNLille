@@ -21,15 +21,12 @@ export const POLE_MARKS: Record<PoleId, string> = {
 export const POLES: PoleId[] = ['events', 'culture', 'communication', 'sports'];
 
 export const BOARD: Member[] = [
-  { id: 'killian', name: 'Killian', role: 'president' },
-  { id: 'leonard', name: 'Léonard', role: 'vicePresident' },
+  { id: 'leonard', name: 'Léonard', role: 'coPresident' },
+  { id: 'romane', name: 'Romane', role: 'coPresident' },
+  { id: 'melina', name: 'Melina', role: 'vicePresident' },
   { id: 'zoe', name: 'Zoé', role: 'secretary' },
-  { id: 'kierian', name: 'Kierian', role: 'treasurer' },
-  { id: 'emma', name: 'Emma', role: 'eventsCoordinator', pole: 'events' },
-  { id: 'simon', name: 'Simon', role: 'eventsManager', pole: 'events' },
-  { id: 'romane', name: 'Romane', role: 'cultureManager', pole: 'culture' },
-  { id: 'faustine', name: 'Faustine', role: 'communicationManager', pole: 'communication' },
-  { id: 'thomas', name: 'Thomas', role: 'sportsManager', pole: 'sports' },
+  { id: 'rimes', name: 'Rimes', role: 'treasurer' },
+  { id: 'yves', name: 'Yves', role: 'operationsManager' },
 ];
 
 /** Public path of a member's photo, sized by `Member.photo`. */
