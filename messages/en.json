@@ -143,11 +143,26 @@
     "ledBy": "Led by",
     "joinCta": "Join a pole",
     "roles": {
-      "coPresident": "Co-president",
-      "vicePresident": "Vice-president",
-      "secretary": "Secretary",
-      "treasurer": "Treasurer",
-      "operationsManager": "Operations manager"
+      "coPresident": {
+        "name": "Co-president",
+        "mission": "Set the association's direction, represent it to universities, the city and the ESN network, and coordinate the poles."
+      },
+      "vicePresident": {
+        "name": "Vice-president",
+        "mission": "Back the co-presidents, step in for them when needed and follow the poles' projects day to day."
+      },
+      "secretary": {
+        "name": "Secretary",
+        "mission": "Handle the paperwork: meeting minutes, general assemblies, membership records and official filings."
+      },
+      "treasurer": {
+        "name": "Treasurer",
+        "mission": "Keep the books: budget, payments and ticket income, partner contracts and grant applications."
+      },
+      "operationsManager": {
+        "name": "Operations manager",
+        "mission": "Make events run smoothly on the ground: logistics, equipment, venues and volunteer schedules."
+      }
     },
     "poles": {
       "sports": {

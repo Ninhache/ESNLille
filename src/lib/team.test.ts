@@ -7,8 +7,10 @@ import { BOARD, POLES, photoSrc } from './team';
 describe('team', () => {
   it('should have copy in both languages for every role and pole', () => {
     for (const { role } of BOARD) {
-      expect(en.team.roles[role]).toBeTruthy();
-      expect(fr.team.roles[role]).toBeTruthy();
+      for (const copy of [en.team.roles[role], fr.team.roles[role]]) {
+        expect(copy.name).toBeTruthy();
+        expect(copy.mission).toBeTruthy();
+      }
     }
     for (const pole of POLES) {
       expect(en.team.poles[pole].description).toBeTruthy();

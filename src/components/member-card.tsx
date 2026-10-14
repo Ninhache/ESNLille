@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { type Member, POLE_MARKS, photoSrc } from '@/lib/team';
 
-type Props = { member: Member; role: string };
+type Props = { member: Member; role: { name: string; mission: string } };
 
 export function MemberCard({ member, role }: Props) {
   const mark = member.pole ? POLE_MARKS[member.pole] : 'var(--color-esn-blue)';
@@ -26,7 +26,8 @@ export function MemberCard({ member, role }: Props) {
         </span>
       )}
       <h3 className="font-heading text-3xl leading-none">{member.name}</h3>
-      <p className="font-black text-ink-soft text-sm uppercase tracking-wider">{role}</p>
+      <p className="font-black text-ink-soft text-sm uppercase tracking-wider">{role.name}</p>
+      <p className="leading-relaxed">{role.mission}</p>
     </li>
   );
 }

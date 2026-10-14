@@ -27,7 +27,7 @@ export default async function TeamPage() {
         <h2 id="board-title" className="mb-6 font-heading text-[clamp(1.75rem,4vw,2.5rem)] leading-none">
           {labels.boardTitle}
         </h2>
-        <ul className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3">
+        <ul className="grid gap-4 sm:grid-cols-2 sm:gap-6 md:grid-cols-3">
           {BOARD.map(member => (
             <MemberCard key={member.id} member={member} role={labels.roles[member.role]} />
           ))}
