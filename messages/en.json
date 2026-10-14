@@ -5,7 +5,13 @@
   },
   "header": {
     "join": "Join us",
-    "switchLocale": "Version française"
+    "switchLocale": "Version française",
+    "nav": {
+      "label": "Main",
+      "events": "Events",
+      "partners": "Partners",
+      "team": "Team"
+    }
   },
   "home": {
     "titleStart": "Your Erasmus diary starts",
@@ -124,6 +130,60 @@
       "studcorp": {
         "kind": "Insurance",
         "offer": "Insurance offers for ESN members"
+      }
+    }
+  },
+  "team": {
+    "title": "The team",
+    "metaDescription": "Meet the student volunteers who run ESN Lille: the board and the poles behind every event.",
+    "lead": "ESN Lille is run entirely by student volunteers. Meet this year's board and the poles that make every event happen.",
+    "boardTitle": "The board",
+    "polesTitle": "The poles",
+    "polesLead": "Every event starts in a pole. Join one: no experience needed, just some time and good vibes.",
+    "ledBy": "Led by",
+    "joinCta": "Join a pole",
+    "roles": {
+      "coPresident": {
+        "name": "Co-president",
+        "mission": "Set the association's direction, represent it to universities, the city and the ESN network, and coordinate the poles."
+      },
+      "vicePresident": {
+        "name": "Vice-president",
+        "mission": "Back the co-presidents, step in for them when needed and follow the poles' projects day to day."
+      },
+      "secretary": {
+        "name": "Secretary",
+        "mission": "Handle the paperwork: meeting minutes, general assemblies, membership records and official filings."
+      },
+      "treasurer": {
+        "name": "Treasurer",
+        "mission": "Keep the books: budget, payments and ticket income, partner contracts and grant applications."
+      },
+      "operationsManager": {
+        "name": "Operations manager",
+        "mission": "Make events run smoothly on the ground: logistics, equipment, venues and volunteer schedules."
+      }
+    },
+    "poles": {
+      "sports": {
+        "name": "Sports",
+        "description": "Sports sessions, tournaments and days outdoors."
+      },
+      "communication": {
+        "name": "Communication",
+        "description": "Instagram, TikTok, posters and photos: letting everyone know what's coming."
+      },
+      "party": {
+        "name": "Parties",
+        "description": "Themed parties and big nights out in Lille: venues, vibe and tickets."
+      },
+      "culture": {
+        "name": "Culture",
+        "description": "Visits, city discoveries and cultural outings in and around Lille."
+      },
+      "hr": {
+        "name": "HR",
+        "description": "Welcoming new volunteers, keeping the team close and looking after everyone who gives their time."
       }
     }
   }
