@@ -13,6 +13,7 @@ export const ORGANIZATION = {
   socials: {
     instagram: 'https://www.instagram.com/esn_lille/',
     tiktok: 'https://www.tiktok.com/@esnlille',
+    whatsapp: 'https://chat.whatsapp.com/',
   },
   parent: { name: 'ESN France', url: 'https://esnfrance.org' },
 } as const;
