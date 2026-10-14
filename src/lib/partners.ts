@@ -29,7 +29,7 @@ export const PARTNERS: Partner[] = [
     id: 'flixbus',
     name: 'Flixbus',
     group: 'travel',
-    url: 'https://esncard.org/flixbus',
+    url: 'https://esncard.org/discount/flixbus-1',
     logo: { width: 378, height: 128 },
     featured: true,
   },
