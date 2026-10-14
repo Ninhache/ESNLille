@@ -62,7 +62,7 @@ export default async function TeamPage() {
                 {isEventPole(pole) && (
                   <Link
                     href={`/${locale}/events/${pole}`}
-                    className={`font-black ${leads.length > 0 ? '' : 'mt-auto'}`}
+                    className={`self-end font-black ${leads.length > 0 ? '' : 'mt-auto'}`}
                   >
                     {labels.seeEvents} →
                   </Link>

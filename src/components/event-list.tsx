@@ -52,7 +52,10 @@ function EventCard({ event, locale, labels }: { event: EsnEvent; locale: string;
         <p className="font-bold first-letter:uppercase">{when}</p>
         {event.place && <p className="text-ink-soft">{event.place}</p>}
         {event.description && <p className="mt-1">{event.description}</p>}
-        <div className="mt-3 flex flex-wrap items-center gap-4">
+        <div className="mt-auto flex flex-wrap items-center justify-end gap-4 pt-3">
+          {event.price && (
+            <span className="font-black">{formatPrice(event.price, event.currency, locale, labels)}</span>
+          )}
           <a
             href={event.url}
             className="rounded-xl border-2 border-ink bg-esn-cyan px-4 py-2 font-black no-underline shadow-hard"
@@ -60,9 +63,6 @@ function EventCard({ event, locale, labels }: { event: EsnEvent; locale: string;
             {labels.tickets}
             <span className="sr-only">: {event.title}</span>
           </a>
-          {event.price && (
-            <span className="font-black">{formatPrice(event.price, event.currency, locale, labels)}</span>
-          )}
         </div>
       </div>
     </li>
