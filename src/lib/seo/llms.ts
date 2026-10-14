@@ -53,6 +53,8 @@ export function llmsText(site: string, events: EventsResult): string {
     `- [Accueil (français)](${site}/fr): la même page en français`,
     `- [Upcoming events (English)](${site}/en/events): every upcoming event with prices and ticket links`,
     `- [Événements à venir (français)](${site}/fr/events): la liste des événements en français`,
+    `- [Partners (English)](${site}/en/partners): ESNcard discounts with ESN Lille's partners`,
+    `- [Partenaires (français)](${site}/fr/partners): les réductions ESNcard chez les partenaires`,
     '',
     '## Upcoming events',
     '',

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { intlLocales, type Locale } from '@/i18n/config';
 import type { Messages } from '@/i18n/dictionaries';
 import { ESNCARD } from '@/lib/esncard';
@@ -38,9 +39,9 @@ export function EsncardBlock({ locale, labels }: Props) {
         </ul>
         <p className="mt-6 max-w-xl text-ink-soft">
           {labels.pickup}{' '}
-          <a href={ESNCARD.partnersUrl} className="font-bold text-ink">
+          <Link href={`/${locale}/partners`} className="font-bold text-ink">
             {labels.partners}
-          </a>
+          </Link>
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-6">
           <a
