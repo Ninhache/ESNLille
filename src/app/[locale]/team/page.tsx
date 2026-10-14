@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { MemberCard } from '@/components/member-card';
 import { getLocale, getMessages } from '@/i18n/dictionaries';
 import { joinMailto } from '@/lib/links';
+import { isEventPole } from '@/lib/poles';
 import { pageMetadata } from '@/lib/seo/metadata';
 import { BOARD, leadsOf, POLE_MARKS, POLES } from '@/lib/team';
 
@@ -16,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function TeamPage() {
-  const messages = await getMessages();
+  const [locale, messages] = await Promise.all([getLocale(), getMessages()]);
   const labels = messages.team;
 
   return (
@@ -56,6 +58,14 @@ export default async function TeamPage() {
                   <p className="mt-auto font-bold text-ink-soft">
                     {labels.ledBy} {leads.map(member => member.name).join(', ')}
                   </p>
+                )}
+                {isEventPole(pole) && (
+                  <Link
+                    href={`/${locale}/events/${pole}`}
+                    className={`font-black ${leads.length > 0 ? '' : 'mt-auto'}`}
+                  >
+                    {labels.seeEvents} →
+                  </Link>
                 )}
               </li>
             );

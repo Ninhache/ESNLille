@@ -53,6 +53,9 @@
     "next": "Prochain rendez-vous",
     "metaDescription": "Soirées, voyages et sorties culturelles organisés par ESN Lille pour les étudiants internationaux. Billets sur HelloAsso.",
     "seeAll": "Tous les événements",
+    "allPoles": "Tous",
+    "poleFilter": "Filtrer les événements par pôle",
+    "poleTitle": "{pole} : prochains événements",
     "tickets": "Billets",
     "free": "Gratuit",
     "from": "Dès {price}",
@@ -141,6 +144,7 @@
     "polesTitle": "Les pôles",
     "polesLead": "Chaque événement naît dans un pôle. Rejoins-en un : pas besoin d'expérience, juste un peu de temps et de bonne humeur.",
     "ledBy": "Animé par",
+    "seeEvents": "Voir ses événements",
     "joinCta": "Rejoindre un pôle",
     "roles": {
       "coPresident": {
