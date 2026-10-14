@@ -53,6 +53,9 @@
     "next": "Next up",
     "metaDescription": "Parties, trips and cultural outings organised by ESN Lille for international students. Tickets on HelloAsso.",
     "seeAll": "All events",
+    "allPoles": "All",
+    "poleFilter": "Filter events by pole",
+    "poleTitle": "{pole}: upcoming events",
     "tickets": "Tickets",
     "free": "Free",
     "from": "From {price}",
@@ -141,6 +144,7 @@
     "polesTitle": "The poles",
     "polesLead": "Every event starts in a pole. Join one: no experience needed, just some time and good vibes.",
     "ledBy": "Led by",
+    "seeEvents": "See its events",
     "joinCta": "Join a pole",
     "roles": {
       "coPresident": {
