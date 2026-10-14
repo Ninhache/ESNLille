@@ -76,6 +76,13 @@
     "homeTitle": "Your ESNcard pays for itself",
     "homeLead": "A few of our partners:",
     "seeAll": "All partners",
+    "map": {
+      "title": "On the map",
+      "lead": "The ESN Lille office and the partners to visit with your ESNcard.",
+      "label": "Map of Lille with the ESN office and partners",
+      "office": "ESN Lille office",
+      "officeDetail": "Maison des Associations, 2nd floor"
+    },
     "items": {
       "ryanair": {
         "kind": "Flights",

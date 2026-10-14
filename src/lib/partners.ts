@@ -1,4 +1,5 @@
 import type { Messages } from '@/i18n/dictionaries';
+import type { Place } from './places';
 
 export type PartnerId = keyof Messages['partners']['items'];
 export type PartnerGroup = 'travel' | 'lille' | 'everyday';
@@ -9,6 +10,7 @@ export type Partner = {
   group: PartnerGroup;
   url: string;
   logo: { width: number; height: number };
+  place?: Place;
   featured?: boolean;
 };
 
@@ -44,6 +46,7 @@ export const PARTNERS: Partner[] = [
     group: 'travel',
     url: 'https://esncard.org/discount/flibco-lille',
     logo: { width: 309, height: 128 },
+    place: { lat: 50.6385837, lng: 3.0767931, address: 'Boulevard de Turin, 59777 Lille' },
   },
   {
     id: 'interrail',
@@ -58,6 +61,7 @@ export const PARTNERS: Partner[] = [
     group: 'lille',
     url: 'https://esncard.org/discount/lambassade-lille',
     logo: { width: 682, height: 128 },
+    place: { lat: 50.630917, lng: 3.0556662, address: '111 rue Solférino, 59000 Lille' },
     featured: true,
   },
   {
@@ -66,6 +70,7 @@ export const PARTNERS: Partner[] = [
     group: 'lille',
     url: 'https://esncard.org/discount/ohamo-watercolor-cafe-lille',
     logo: { width: 437, height: 128 },
+    place: { lat: 50.631844, lng: 3.0628037, address: '6 rue Jeanne Maillotte, 59800 Lille' },
   },
   {
     id: 'revolut',
@@ -101,6 +106,11 @@ export const PARTNERS: Partner[] = [
 /** Public path of a partner's logo, sized by `Partner.logo`. */
 export function logoSrc(partner: Partner): string {
   return `/partners/${partner.id}.png`;
+}
+
+/** The partners with a place in Lille, for the map. */
+export function placedPartners(): (Partner & { place: Place })[] {
+  return PARTNERS.filter((partner): partner is Partner & { place: Place } => partner.place !== undefined);
 }
 
 /** The partners of `group`, in display order. */
