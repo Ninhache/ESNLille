@@ -30,6 +30,16 @@
   a {
     color: inherit;
   }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
 }
 
 @utility font-heading {
@@ -47,4 +57,46 @@
     transparent 92%
   );
   padding: 0 0.06em;
+}
+
+.partners-map .leaflet-tile-pane {
+  filter: grayscale(1) contrast(0.92) brightness(1.04);
+}
+
+.partners-map-pin {
+  border: 2px solid var(--color-ink);
+  border-radius: 9999px;
+  background: var(--pin, var(--color-esn-cyan));
+  box-shadow: 3px 3px 0 var(--color-ink);
+}
+
+.partners-map .partners-map-office {
+  display: grid;
+  place-items: center;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  box-shadow: 3px 3px 0 var(--color-esn-magenta);
+}
+
+.partners-map-popup {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+}
+
+.partners-map-popup strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+.partners-map-popup p {
+  margin: 0.25rem 0;
+}
+
+.partners-map-popup a {
+  font-weight: 900;
+  color: var(--color-ink);
 }

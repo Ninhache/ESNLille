@@ -4,15 +4,16 @@ export const ORGANIZATION = {
   email: 'lille@esn.fr',
   foundingDate: '2010',
   address: {
-    name: "Maison de l'Étudiant",
-    street: 'Cité Scientifique',
-    postalCode: '59650',
-    city: "Villeneuve-d'Ascq",
+    name: 'Maison des Associations',
+    street: '27 rue Jean Bart',
+    postalCode: '59000',
+    city: 'Lille',
     country: 'FR',
   },
   socials: {
     instagram: 'https://www.instagram.com/esn_lille/',
     tiktok: 'https://www.tiktok.com/@esnlille',
+    whatsapp: 'https://chat.whatsapp.com/',
   },
   parent: { name: 'ESN France', url: 'https://esnfrance.org' },
 } as const;

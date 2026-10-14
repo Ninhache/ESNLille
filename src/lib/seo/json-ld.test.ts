@@ -20,7 +20,7 @@ describe('organizationJsonLd', () => {
       '@id': 'https://lille.test/#organization',
       url: site,
       email: 'lille@esn.fr',
-      address: { '@type': 'PostalAddress', postalCode: '59650', addressCountry: 'FR' },
+      address: { '@type': 'PostalAddress', postalCode: '59000', addressCountry: 'FR' },
       parentOrganization: { name: 'ESN France' },
     });
     expect(organization.sameAs).toContain('https://www.instagram.com/esn_lille/');
